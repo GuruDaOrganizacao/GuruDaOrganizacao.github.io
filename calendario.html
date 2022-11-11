@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/calendario.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Guru da Organização</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="calendario.html">Calendário</a></li>
+            <li><a href="barra.html">Barra de Progresso</a></li>
+            <li><a href="lista.html">Lista de Tarefas</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="bloco1">
+        <div id="container">
+            <div id="header">
+                <div id="monthDisplay"></div>
+                <div>
+                    <button id="backButton">Voltar</button>
+                    <button id="nextButton">Próximo</button>
+                </div>
+            </div>
+
+            <div id="weekdays">
+                <div>Domingo</div>
+                <div>Segunda</div>
+                <div>Terça</div>
+                <div>Quarta</div>
+                <div>Quinta</div>
+                <div>Sexta</div>
+                <div>Sábado</div>
+            </div>
+
+            <div id="calendar"></div>
+        </div>
+
+        <div id="newEventModal">
+            <h2>Novo Evento</h2>
+
+            <input id="eventTitleInput" placeholder="Título do Evento" />
+
+            <button id="saveButton">Salvar</button>
+            <button id="cancelButton">Cancelar</button>
+        </div>
+
+        <div id="deleteEventModal">
+            <h2>Evento</h2>
+
+            <p id="eventText"></p>
+
+            <button id="deleteButton">Deletar</button>
+            <button id="closeButton">Fechar</button>
+        </div>
+
+        <div id="modalBackDrop"></div>
+    </div>
+
+    <script src="./src/calendario.js"></script>
+</body>
+
+<script>
+    window.addEventListener('mouseover', initLandbot, { once: true });
+    window.addEventListener('touchstart', initLandbot, { once: true });
+    var myLandbot;
+    function initLandbot() {
+        if (!myLandbot) {
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+            s.addEventListener('load', function () {
+                myLandbot = new Landbot.Popup({
+                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1412942-2SKIMUFP8294NFZ9/index.json',
+                });
+            });
+            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        }
+    }
+</script>
+
+</html>
