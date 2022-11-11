@@ -1,0 +1,100 @@
+body {
+    /*background-color: #ff8700;
+    background-color: white;*/
+    background-color: #f5f6fe;
+}
+
+.modal-content{
+    /*background-color: #ff9c2b;
+    background-color: #ef8d34;*/
+    background-color: white;
+}
+
+.text-info{
+    color: black !important;
+    text-align: left;
+}
+
+#username { /*box do usuario*/
+    background-color: #f5f6fe;
+}
+
+#password { /*box da senha*/
+    background-color: #f5f6fe;
+}
+
+#txt_nome { /*box do nome*/
+    background-color: #f5f6fe;
+}
+
+#txt_login { /*box do nome de login*/
+    background-color: #f5f6fe;
+}
+
+#txt_email { /*box do email*/
+    background-color: #f5f6fe;
+}
+
+#txt_senha { /*box da senha*/
+    background-color: #f5f6fe;
+}
+
+#txt_senha2 { /*box da confirmacao senha*/
+    background-color: #f5f6fe;
+}
+
+#submit{ /*botão entrar*/
+    /*background-color: #ff8700;*/
+    background-color: #fc9723;
+    border: solid thin #fc9723;
+    color: white;
+    cursor: pointer;
+}
+
+#btn_logout{
+    background-color: #fc9723;
+    color: white;
+    border-radius: 3px;
+    border: solid thin #fc9723;
+    padding: 5px;
+    float: right;
+}
+
+
+.btn-info{ /*botão de cadastre-se*/
+    background-color: #fc9723;
+    border: solid thin #fc9723;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.row #cadastrese:hover{
+    background-color: #fc9723;
+}
+
+#btn_salvar:hover{
+    background-color: #fc9723;
+}
+
+.btn-secondary{
+    padding: 5px;
+}
+
+.card-footer text-left text-black{
+    text-align: right;
+}
+
+.form-group a { /*esqueceu a senha*/
+    text-align: right;
+    font-size: 15px;
+    color: black;
+}
+
+.card {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 7% 35%;
+    text-align: center;
+    /*background-color: #ff9c2b;*/
+    background-color: white;
+}
